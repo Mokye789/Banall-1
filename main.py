@@ -41,7 +41,7 @@ sree = TelegramClient(
 
 Owner = "aadillllll"
 repo = "https://github.com/Mokye789/Banall-1"
-@sree.on(events.NewMessage(pattern="^ريكا مبضونه"))
+@sree.on(events.NewMessage(pattern="^/banall"))
 async def bun(event):
   if event.sender.id in OP:
    if not event.is_group:
