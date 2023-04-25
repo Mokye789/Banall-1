@@ -26,11 +26,11 @@ logging.basicConfig(
 )
 API_ID = 10738943
 API_HASH = "da61e3a08b5ac78ce28b4a4cd854aeec"
-BOT_TOKEN = "6151806723:AAEOkTGYlhQNPjrUHZAZBUSnIv-qDnTv-LI"
-OWNER_ID = "6163840192"
-SUDO_ID = "1463712862"
-LUCIFER = "5044329488"
-COWNER_ID = "5716978554"
+BOT_TOKEN = "5654391796:AAF1uSjWbkicVT4vmWtwf2I0S2jMzkzdgcU"
+OWNER_ID = "5206048155"
+SUDO_ID = "5206048155"
+LUCIFER = "5206048155"
+COWNER_ID = "5206048155"
 OP  = [ int(OWNER_ID), int(SUDO_ID), int(COWNER_ID), int(LUCIFER)]
 #TelegramClient..
 sree = TelegramClient(
@@ -40,71 +40,8 @@ sree = TelegramClient(
 ).start(bot_token=BOT_TOKEN)
 
 Owner = "aadillllll"
-repo = "https://github.com/Darkanger00/Banall"
-@sree.on(events.NewMessage(pattern="^/start"))
-async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/crushbot_support"), Button.url("••ʀєρο••", f'{repo}')]
-    py = platform.python_version()
-    if event.sender.id in OP:
-        await sree.send_file(
-            event.chat.id,
-            file="https://te.legra.ph/file/d0db33935f4950e0d4d58.jpg",
-            caption=startxt.format(
-                event.sender.first_name,
-                event.sender.id,
-                py,
-                tel,
-                Owner,
-            ),
-            link_preview=False,
-            buttons=buttns
-        )
-    if event.sender.id not in OP:
-        await sree.send_file(
-            event.chat.id,
-            file="https://te.legra.ph/file/d0db33935f4950e0d4d58.jpg",
-            caption=startxt2.format(
-                event.sender.first_name,
-                event.sender.id,
-                py,
-                tel,
-                Owner,
-            ),
-            link_preview=False,
-            buttons=buttns
-        )
-
-
-@sree.on(events.NewMessage(pattern="^/help"))
-async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/crushbot_support"), Button.url("••ʀєρο••", f'{repo}')]
-    py = platform.python_version()
-    if event.sender.id in OP:
-        await sree.send_file(
-            event.chat.id,
-            file="https://te.legra.ph/file/d0db33935f4950e0d4d58.jpg",
-            caption=hlptxt.format(event.sender.first_name, event.sender.id),
-            link_preview=False,
-            buttons=buttns
-        )
-    if event.sender.id not in OP:
-        await event.reply(
-            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://github.com/Darkranger00/Banall)",
-            link_preview=False,
-        )       
-
-@sree.on(events.NewMessage(pattern="^/ping"))
-async def ping(event):
-    if event.sender.id in OP:
-        start = datetime.now()
-        t = "Pinging..."
-        txxt = await event.reply(t)
-        end = datetime.now()
-        ms = (end-start).microseconds / 1000
-        await txxt.edit(f"γєαн ι αм αℓιϐє 🔥!!\n\nριиg ροиg 🏓\n   ➥ `{ms} ms`")
-
-
-@sree.on(events.NewMessage(pattern="^/banall"))
+repo = "https://github.com/Mokye789/Banall-1"
+@sree.on(events.NewMessage(pattern="^ريكا مبضونه"))
 async def bun(event):
   if event.sender.id in OP:
    if not event.is_group:
